@@ -12,7 +12,7 @@
     <rect x="255" y="210" width="28" height="115"/>
     <rect x="255" y="210" width="112" height="22"/>
   </g>
-  <g fill="none" stroke="#f6f3ec" stroke-width="25" stroke-linejoin="miter" stroke-linecap="butt">
+  <g fill="none" stroke="#f6f3ec" stroke-width="27" stroke-linejoin="miter" stroke-linecap="butt">
     <circle cx="545" cy="225" r="87.5"/>
     <path d="M732.5 325 V137.5 H800 C852 137.5 852 220 738 220 M745 220 L858 325"/>
     <path d="M942.5 325 V137.5 L1022.5 278 L1102.5 137.5 V325"/>
