@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220" role="img" aria-labelledby="title">
+  <title id="title">FORM Wetrooms</title>
+  <rect width="520" height="220" fill="none"/>
+  <g fill="none" stroke="#c6a76c" stroke-width="5" stroke-linecap="square">
+    <path d="M18 18 H502"/>
+    <path d="M18 18 V156 H64"/>
+    <path d="M502 18 V156 H454"/>
+  </g>
+  <g fill="#f6f3ec">
+    <rect x="58" y="58" width="70" height="10"/>
+    <rect x="58" y="92" width="13" height="61"/>
+    <rect x="58" y="92" width="48" height="10"/>
+  </g>
+  <text x="150" y="151" fill="#f6f3ec" font-family="Arial, Helvetica, sans-serif" font-size="118" font-weight="300" letter-spacing="8">ORM</text>
+  <rect x="84" y="139" width="350" height="34" fill="#0d0e0f"/>
+  <text x="260" y="165" text-anchor="middle" fill="#c6a76c" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="300" letter-spacing="10">WETROOMS</text>
+</svg>
