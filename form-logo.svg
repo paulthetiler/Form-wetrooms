@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 700" role="img" aria-labelledby="title desc">
+  <title id="title">FORM Wetrooms</title>
+  <desc id="desc">FORM Wetrooms logo with stylised broken F, champagne partial frame and Designed. Engineered. Tiled. strapline.</desc>
+  <rect width="1400" height="700" fill="none"/>
+  <g fill="none" stroke="#c6a76c" stroke-width="10" stroke-linecap="square">
+    <path d="M165 145 H1235"/>
+    <path d="M165 145 V455 H270"/>
+    <path d="M1235 145 V455 H1125"/>
+  </g>
+  <g fill="#f6f3ec">
+    <rect x="255" y="245" width="160" height="22" rx="1"/>
+    <rect x="255" y="325" width="28" height="125" rx="1"/>
+    <rect x="255" y="325" width="112" height="22" rx="1"/>
+  </g>
+  <g fill="#f6f3ec" font-family="Arial, Helvetica, sans-serif" font-weight="300">
+    <text x="465" y="448" font-size="250" letter-spacing="18">O</text>
+    <text x="735" y="448" font-size="250" letter-spacing="18">R</text>
+    <text x="1000" y="448" font-size="250" letter-spacing="8">M</text>
+  </g>
+  <rect x="300" y="423" width="800" height="72" fill="#0d0e0f"/>
+  <text x="700" y="475" text-anchor="middle" fill="#c6a76c" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="300" letter-spacing="25">WETROOMS</text>
+  <text x="700" y="605" text-anchor="middle" fill="#f6f3ec" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="500" letter-spacing="14">DESIGNED. ENGINEERED. TILED.</text>
+</svg>
