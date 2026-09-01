@@ -1,10 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 640" role="img" aria-labelledby="title desc">
   <title id="title">FORM Wetrooms</title>
-  <desc id="desc">FORM Wetrooms wordmark in a single geometric sans, with a waterdrop as the O, champagne frame and Designed. Engineered. Tiled. strapline.</desc>
+  <desc id="desc">FORM Wetrooms wordmark in a single geometric sans, with a blue waterdrop as the O, champagne frame and Designed. Engineered. Tiled. strapline.</desc>
   <defs>
     <filter id="halo" x="-25%" y="-35%" width="150%" height="170%">
       <feDropShadow dx="0" dy="1" stdDeviation="5" flood-color="#050607" flood-opacity=".88"/>
     </filter>
+    <linearGradient id="waterFill" x1="0.28" y1="0.02" x2="0.84" y2="1">
+      <stop offset="0%" stop-color="#d8f6ff"/>
+      <stop offset="18%" stop-color="#7ad2f2"/>
+      <stop offset="46%" stop-color="#2b9fd8"/>
+      <stop offset="74%" stop-color="#0e6eae"/>
+      <stop offset="100%" stop-color="#063d6a"/>
+    </linearGradient>
+    <radialGradient id="waterSheen" cx="0.38" cy="0.28" r="0.62">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity=".55"/>
+      <stop offset="42%" stop-color="#8fd9f5" stop-opacity=".14"/>
+      <stop offset="100%" stop-color="#042c4d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="waterShimmer" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="42%" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#fff" stop-opacity=".92"/>
+      <stop offset="58%" stop-color="#bfefff" stop-opacity=".28"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0; 1 0" dur="3.2s" repeatCount="indefinite"/>
+    </linearGradient>
+    <clipPath id="waterClip">
+      <path d="M 535.78,159.44 C 524.10,192.00 462.82,243.16 462.82,303.63 C 462.82,368.74 494.92,392.00 535.78,392.00 C 576.63,392.00 608.74,368.74 608.74,303.63 C 608.74,243.16 547.45,192.00 535.78,159.44 Z"/>
+    </clipPath>
   </defs>
   <rect width="1400" height="640" fill="none"/>
   <g fill="none" stroke="#e4cc90" stroke-width="8" stroke-linecap="square">
@@ -14,8 +37,13 @@
   </g>
   <g filter="url(#halo)">
     <path fill="#f6f3ec" d="M265.26 392.00V164.00H302.71V392.00ZM290.99 294.29V260.09H406.94V294.29ZM290.99 198.20V164.00H412.48V198.20Z"/>
-    <path fill="#f6f3ec" d="M 535.78,159.44 C 524.10,192.00 462.82,243.16 462.82,303.63 C 462.82,368.74 494.92,392.00 535.78,392.00 C 576.63,392.00 608.74,368.74 608.74,303.63 C 608.74,243.16 547.45,192.00 535.78,159.44 Z"/>
-    <path fill="#e4cc90" d="M 518.27,247.81 C 499.30,255.35 506.88,277.12 518.27,289.67 C 527.37,268.74 525.85,252.84 518.27,247.81 Z"/>
+    <path fill="url(#waterFill)" d="M 535.78,159.44 C 524.10,192.00 462.82,243.16 462.82,303.63 C 462.82,368.74 494.92,392.00 535.78,392.00 C 576.63,392.00 608.74,368.74 608.74,303.63 C 608.74,243.16 547.45,192.00 535.78,159.44 Z"/>
+    <path fill="url(#waterSheen)" d="M 535.78,159.44 C 524.10,192.00 462.82,243.16 462.82,303.63 C 462.82,368.74 494.92,392.00 535.78,392.00 C 576.63,392.00 608.74,368.74 608.74,303.63 C 608.74,243.16 547.45,192.00 535.78,159.44 Z"/>
+    <g clip-path="url(#waterClip)">
+      <rect x="430" y="150" width="58" height="260" fill="url(#waterShimmer)"/>
+    </g>
+    <path fill="#f3fbff" opacity=".9" d="M 518.27,247.81 C 499.30,255.35 506.88,277.12 518.27,289.67 C 527.37,268.74 525.85,252.84 518.27,247.81 Z"/>
+    <ellipse cx="548" cy="210" rx="9" ry="16" fill="#ffffff" opacity=".38" transform="rotate(-18 548 210)"/>
     <path fill="#f6f3ec" d="M697.18 295.26V264.32H754.83Q772.10 264.32 781.71 255.36Q791.31 246.41 791.31 230.45Q791.31 216.11 781.87 206.34Q772.42 196.57 755.16 196.57H697.18V164.00H756.79Q778.29 164.00 794.57 172.63Q810.86 181.26 819.81 196.08Q828.77 210.90 828.77 229.79Q828.77 249.66 819.81 264.32Q810.86 278.98 794.57 287.12Q778.29 295.26 756.79 295.26ZM671.45 392.00V164.00H708.91V392.00ZM796.53 392.00 716.73 292.98 751.58 280.28 843.75 392.00Z"/>
     <path fill="#f6f3ec" d="M898.00 392.00V164.00H924.06L1018.84 320.02H1001.90L1096.69 164.00H1122.74V392.00H1085.29V229.79L1093.75 232.07L1023.40 347.70H997.34L926.99 232.07L935.46 229.79V392.00Z"/>
   </g>
