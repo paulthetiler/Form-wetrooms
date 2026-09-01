@@ -1,54 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 640" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 20 1400 700" role="img" aria-labelledby="title desc">
   <title id="title">FORM Wetrooms</title>
-  <desc id="desc">FORM Wetrooms wordmark in a single geometric sans, with a blue waterdrop as the O, champagne frame and Designed. Engineered. Tiled. strapline.</desc>
+  <desc id="desc">FORM wordmark in a gold architectural frame, with a small glass water drip hanging from the F, plus Wetrooms &amp; Bespoke Tiling and Designed. Engineered. Tiled.</desc>
+
   <defs>
-    <filter id="halo" x="-25%" y="-35%" width="150%" height="170%">
+    <filter id="halo" x="-25%" y="-35%" width="150%" height="180%">
       <feDropShadow dx="0" dy="1" stdDeviation="5" flood-color="#050607" flood-opacity=".88"/>
     </filter>
-    <linearGradient id="waterFill" x1="0.28" y1="0.02" x2="0.84" y2="1">
-      <stop offset="0%" stop-color="#d8f6ff"/>
-      <stop offset="18%" stop-color="#7ad2f2"/>
-      <stop offset="46%" stop-color="#2b9fd8"/>
-      <stop offset="74%" stop-color="#0e6eae"/>
-      <stop offset="100%" stop-color="#063d6a"/>
+    <linearGradient id="waterBody" x1="294" y1="392" x2="299" y2="415" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7c9098"/>
+      <stop offset=".55" stop-color="#5a717a"/>
+      <stop offset="1" stop-color="#3d5159"/>
     </linearGradient>
-    <radialGradient id="waterSheen" cx="0.38" cy="0.28" r="0.62">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity=".55"/>
-      <stop offset="42%" stop-color="#8fd9f5" stop-opacity=".14"/>
-      <stop offset="100%" stop-color="#042c4d" stop-opacity="0"/>
+    <linearGradient id="waterShade" x1="306" y1="398" x2="286" y2="414" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1c272c" stop-opacity="0"/>
+      <stop offset="1" stop-color="#1c272c" stop-opacity=".36"/>
+    </linearGradient>
+    <linearGradient id="textBack" x1="700" y1="470" x2="700" y2="710" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0b0c0d" stop-opacity="0"/>
+      <stop offset=".18" stop-color="#0b0c0d" stop-opacity=".88"/>
+      <stop offset="1" stop-color="#0b0c0d" stop-opacity=".38"/>
+    </linearGradient>
+    <radialGradient id="textGlow" cx="700" cy="590" r="440" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0b0c0d" stop-opacity=".82"/>
+      <stop offset=".68" stop-color="#0b0c0d" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#0b0c0d" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="waterShimmer" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#fff" stop-opacity="0"/>
-      <stop offset="42%" stop-color="#fff" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#fff" stop-opacity=".92"/>
-      <stop offset="58%" stop-color="#bfefff" stop-opacity=".28"/>
-      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
-      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0; 1 0" dur="3.2s" repeatCount="indefinite"/>
-    </linearGradient>
-    <clipPath id="waterClip">
-      <path d="M 535.78,159.44 C 524.10,192.00 462.82,243.16 462.82,303.63 C 462.82,368.74 494.92,392.00 535.78,392.00 C 576.63,392.00 608.74,368.74 608.74,303.63 C 608.74,243.16 547.45,192.00 535.78,159.44 Z"/>
-    </clipPath>
   </defs>
-  <rect width="1400" height="640" fill="none"/>
-  <g fill="none" stroke="#e4cc90" stroke-width="8" stroke-linecap="square">
-    <path d="M170 118 H1230"/>
-    <path d="M170 118 V418 H278"/>
-    <path d="M1230 118 V418 H1122"/>
+  <rect width="1400" height="740" fill="none"/>
+
+  <g fill="none" stroke="#e4cc90" stroke-width="7.5" stroke-linecap="square">
+    <path d="M178 98 H1222"/>
+    <path d="M178 98 V456 H308"/>
+    <path d="M1222 98 V456 H1092"/>
   </g>
   <g filter="url(#halo)">
     <path fill="#f6f3ec" d="M265.26 392.00V164.00H302.71V392.00ZM290.99 294.29V260.09H406.94V294.29ZM290.99 198.20V164.00H412.48V198.20Z"/>
-    <path fill="url(#waterFill)" d="M 535.78,159.44 C 524.10,192.00 462.82,243.16 462.82,303.63 C 462.82,368.74 494.92,392.00 535.78,392.00 C 576.63,392.00 608.74,368.74 608.74,303.63 C 608.74,243.16 547.45,192.00 535.78,159.44 Z"/>
-    <path fill="url(#waterSheen)" d="M 535.78,159.44 C 524.10,192.00 462.82,243.16 462.82,303.63 C 462.82,368.74 494.92,392.00 535.78,392.00 C 576.63,392.00 608.74,368.74 608.74,303.63 C 608.74,243.16 547.45,192.00 535.78,159.44 Z"/>
-    <g clip-path="url(#waterClip)">
-      <rect x="430" y="150" width="58" height="260" fill="url(#waterShimmer)"/>
-    </g>
-    <path fill="#f3fbff" opacity=".9" d="M 518.27,247.81 C 499.30,255.35 506.88,277.12 518.27,289.67 C 527.37,268.74 525.85,252.84 518.27,247.81 Z"/>
-    <ellipse cx="548" cy="210" rx="9" ry="16" fill="#ffffff" opacity=".38" transform="rotate(-18 548 210)"/>
+    <path fill="#f6f3ec" fill-rule="evenodd" d="M542 159.5A91 118.5 0 1 1 542 396.5A91 118.5 0 1 1 542 159.5ZM542 197.2A53.2 80.8 0 1 1 542 358.8A53.2 80.8 0 1 1 542 197.2Z"/>
     <path fill="#f6f3ec" d="M697.18 295.26V264.32H754.83Q772.10 264.32 781.71 255.36Q791.31 246.41 791.31 230.45Q791.31 216.11 781.87 206.34Q772.42 196.57 755.16 196.57H697.18V164.00H756.79Q778.29 164.00 794.57 172.63Q810.86 181.26 819.81 196.08Q828.77 210.90 828.77 229.79Q828.77 249.66 819.81 264.32Q810.86 278.98 794.57 287.12Q778.29 295.26 756.79 295.26ZM671.45 392.00V164.00H708.91V392.00ZM796.53 392.00 716.73 292.98 751.58 280.28 843.75 392.00Z"/>
     <path fill="#f6f3ec" d="M898.00 392.00V164.00H924.06L1018.84 320.02H1001.90L1096.69 164.00H1122.74V392.00H1085.29V229.79L1093.75 232.07L1023.40 347.70H997.34L926.99 232.07L935.46 229.79V392.00Z"/>
   </g>
-  <rect x="240" y="418" width="920" height="168" fill="#0b0c0d"/>
-  <g>
+
+  <g id="f-drip" aria-hidden="true">
+    <path fill="#4f646c" opacity=".55" d="M273.6 392.0 C276.8 396.4 282.4 398.0 289.4 398.1 C296.0 398.2 300.8 396.6 303.4 392.0 H273.6Z"/>
+    <path fill="url(#waterBody)" d="M287.4 391.8 C285.6 395.6 284.8 400.0 285.4 404.2 C286.2 410.0 290.8 414.4 296.8 414.6 C302.8 414.8 307.6 410.6 307.4 404.8 C307.2 400.2 305.2 395.8 302.6 391.9 C298.8 391.6 291.2 391.5 287.4 391.8Z"/>
+    <path fill="url(#waterShade)" opacity=".5" d="M287.4 391.8 C285.6 395.6 284.8 400.0 285.4 404.2 C286.2 410.0 290.8 414.4 296.8 414.6 C302.8 414.8 307.6 410.6 307.4 404.8 C307.2 400.2 305.2 395.8 302.6 391.9 C298.8 391.6 291.2 391.5 287.4 391.8Z"/>
+    <path fill="#c9d5da" opacity=".34" d="M288.2 394.6C286.8 398.4 286.0 402.6 286.6 406.2C287.2 409.2 289.4 411.0 291.2 410.2C292.8 409.4 293.2 406.0 292.8 402.4C292.4 398.6 291.2 395.4 289.6 393.8C289.0 394.0 288.5 394.2 288.2 394.6Z"/>
+    <ellipse cx="289.6" cy="400.6" rx="2.4" ry="3.5" fill="#f4f7f8" opacity=".78" transform="rotate(-24 289.6 400.6)"/>
+    <ellipse cx="301.6" cy="408.8" rx="1.15" ry="1.55" fill="#d5dfe3" opacity=".32" transform="rotate(16 301.6 408.8)"/>
+  </g>
+  <rect x="210" y="472" width="980" height="230" fill="url(#textGlow)"/>
+  <g transform="translate(0 64)">
     <path fill="#e4cc90" d="M470.09 468.00 454.97 422.00H462.40L473.77 457.42H471.80L482.90 422.00H488.16L499.26 457.42H497.29L508.66 422.00H516.09L500.97 468.00H495.72L484.54 432.65H486.52L475.34 468.00Z"/>
     <path fill="#e4cc90" d="M538.79 468.00V422.00H546.35V468.00ZM543.98 468.00V461.10H569.74V468.00ZM543.98 447.83V441.19H567.51V447.83ZM543.98 428.90V422.00H569.41V428.90Z"/>
     <path fill="#e4cc90" d="M605.13 468.00V423.31H612.68V468.00ZM590.14 428.90V422.00H627.67V428.90Z"/>
@@ -71,6 +72,8 @@
     <path fill="#e4cc90" d="M848.04 514.00V486.00H852.64V514.00Z"/>
     <path fill="#e4cc90" d="M867.72 514.00V486.00H870.92L872.32 491.28V514.00ZM887.12 514.00 870.36 492.12 870.92 486.00 887.68 507.88ZM887.12 514.00 885.72 509.08V486.00H890.32V514.00Z"/>
     <path fill="#e4cc90" d="M918.04 514.40Q915.16 514.40 912.60 513.28Q910.04 512.16 908.12 510.18Q906.20 508.20 905.10 505.58Q904.00 502.96 904.00 499.96Q904.00 496.96 905.10 494.36Q906.20 491.76 908.14 489.78Q910.08 487.80 912.70 486.70Q915.32 485.60 918.36 485.60Q921.68 485.60 924.52 486.88Q927.36 488.16 929.28 490.52L926.16 493.64Q924.92 491.88 922.84 490.94Q920.76 490.00 918.36 490.00Q915.48 490.00 913.30 491.26Q911.12 492.52 909.92 494.76Q908.72 497.00 908.72 499.96Q908.72 502.92 909.94 505.18Q911.16 507.44 913.24 508.72Q915.32 510.00 917.96 510.00Q920.76 510.00 922.78 508.98Q924.80 507.96 925.88 505.94Q926.96 503.92 926.96 500.96L929.84 503.04H917.88V498.84H931.72V499.48Q931.72 504.48 929.94 507.80Q928.16 511.12 925.08 512.76Q922.00 514.40 918.04 514.40Z"/>
+  </g>
+  <g transform="translate(0 78)">
     <path fill="#f6f3ec" d="M377.62 568.00V564.70H383.40Q385.66 564.70 387.38 563.73Q389.09 562.75 390.05 561.01Q391.01 559.26 391.01 556.97Q391.01 554.71 390.03 552.98Q389.06 551.25 387.35 550.27Q385.63 549.30 383.40 549.30H377.62V546.00H383.50Q385.88 546.00 387.93 546.83Q389.97 547.67 391.49 549.16Q393.02 550.65 393.87 552.65Q394.72 554.64 394.72 557.00Q394.72 559.33 393.87 561.34Q393.02 563.35 391.51 564.84Q390.00 566.33 387.96 567.17Q385.92 568.00 383.56 568.00ZM375.14 568.00V546.00H378.75V568.00Z"/>
     <path fill="#f6f3ec" d="M405.39 568.00V546.00H409.01V568.00ZM407.88 568.00V564.70H420.20V568.00ZM407.88 558.35V555.18H419.13V558.35ZM407.88 549.30V546.00H420.04V549.30Z"/>
     <path fill="#f6f3ec" d="M437.06 568.31Q434.46 568.31 432.63 567.37Q430.81 566.43 429.36 564.61L431.82 562.15Q432.73 563.47 433.98 564.21Q435.24 564.95 437.19 564.95Q439.01 564.95 440.10 564.20Q441.18 563.44 441.18 562.12Q441.18 561.02 440.62 560.33Q440.05 559.64 439.12 559.18Q438.20 558.73 437.08 558.37Q435.96 558.01 434.85 557.55Q433.73 557.09 432.81 556.40Q431.88 555.71 431.31 554.61Q430.75 553.51 430.75 551.81Q430.75 549.87 431.71 548.50Q432.66 547.13 434.30 546.41Q435.93 545.69 437.94 545.69Q440.11 545.69 441.83 546.53Q443.54 547.38 444.61 548.70L442.16 551.15Q441.21 550.09 440.19 549.57Q439.17 549.05 437.85 549.05Q436.22 549.05 435.29 549.71Q434.36 550.37 434.36 551.56Q434.36 552.57 434.93 553.18Q435.49 553.79 436.42 554.22Q437.35 554.64 438.46 555.02Q439.58 555.40 440.69 555.87Q441.81 556.34 442.74 557.08Q443.66 557.82 444.23 558.98Q444.80 560.14 444.80 561.90Q444.80 564.86 442.71 566.59Q440.62 568.31 437.06 568.31Z"/>
