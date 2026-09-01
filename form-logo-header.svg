@@ -1,16 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220" role="img" aria-labelledby="title">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 540" role="img" aria-labelledby="title desc">
   <title id="title">FORM Wetrooms</title>
-  <rect width="520" height="220" fill="none"/>
-  <g fill="none" stroke="#c6a76c" stroke-width="5" stroke-linecap="square">
-    <path d="M18 18 H502"/>
-    <path d="M18 18 V156 H64"/>
-    <path d="M502 18 V156 H454"/>
+  <desc id="desc">Compact FORM Wetrooms logo matching the main hero mark.</desc>
+  <rect width="1400" height="540" fill="none"/>
+  <g fill="none" stroke="#c6a76c" stroke-width="10" stroke-linecap="square">
+    <path d="M165 65 H1235"/>
+    <path d="M165 65 V375 H270"/>
+    <path d="M1235 65 V375 H1125"/>
   </g>
   <g fill="#f6f3ec">
-    <rect x="58" y="58" width="70" height="10"/>
-    <rect x="58" y="94" width="13" height="59"/>
-    <rect x="58" y="94" width="48" height="10"/>
+    <rect x="255" y="125" width="160" height="22"/>
+    <rect x="255" y="210" width="28" height="115"/>
+    <rect x="255" y="210" width="112" height="22"/>
   </g>
-  <text x="145" y="151" fill="#f6f3ec" font-family="Arial, Helvetica, sans-serif" font-size="112" font-weight="300">ORM</text>
-  <text x="260" y="178" text-anchor="middle" fill="#c6a76c" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="300" letter-spacing="10">WETROOMS</text>
+  <g fill="#f6f3ec" font-family="Arial, Helvetica, sans-serif" font-weight="300">
+    <text x="450" y="325" font-size="240">O</text>
+    <text x="705" y="325" font-size="240">R</text>
+    <text x="960" y="325" font-size="240">M</text>
+  </g>
+  <rect x="300" y="350" width="800" height="70" fill="#0d0e0f"/>
+  <text x="700" y="402" text-anchor="middle" fill="#c6a76c" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="300" letter-spacing="26">WETROOMS</text>
 </svg>
