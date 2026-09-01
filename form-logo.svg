@@ -12,10 +12,10 @@
     <rect x="255" y="290" width="28" height="115"/>
     <rect x="255" y="290" width="112" height="22"/>
   </g>
-  <g fill="#f6f3ec" font-family="Arial, Helvetica, sans-serif" font-weight="300">
-    <text x="450" y="405" font-size="240">O</text>
-    <text x="705" y="405" font-size="240">R</text>
-    <text x="960" y="405" font-size="240">M</text>
+  <g fill="none" stroke="#f6f3ec" stroke-width="27" stroke-linejoin="miter" stroke-linecap="butt">
+    <circle cx="545" cy="305" r="87.5"/>
+    <path d="M732.5 405 V217.5 H800 C852 217.5 852 300 738 300 M745 300 L858 405"/>
+    <path d="M942.5 405 V217.5 L1022.5 358 L1102.5 217.5 V405"/>
   </g>
   <rect x="300" y="430" width="800" height="70" fill="#0d0e0f"/>
   <text x="700" y="482" text-anchor="middle" fill="#c6a76c" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="300" letter-spacing="26">WETROOMS</text>
