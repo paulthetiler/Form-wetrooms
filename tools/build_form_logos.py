@@ -6,6 +6,7 @@ import cairosvg
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
+PUBLIC = ROOT / "public"
 
 F_PATH = (
     "M265.26 392.00V164.00H302.71V392.00ZM290.99 294.29V260.09H406.94V294.29Z"
@@ -129,7 +130,7 @@ def load_existing_sublines():
     import subprocess
 
     text = subprocess.check_output(
-        ["git", "show", "HEAD:form-logo.svg"], cwd=ROOT, text=True
+        ["git", "show", "HEAD:public/form-logo.svg"], cwd=ROOT, text=True
     )
     start = text.index('<path fill="#e4cc90" d="M470.09 468.00')
     designed = text.index('<path fill="#f6f3ec" d="M377.62 568.00')
@@ -201,15 +202,17 @@ def raster(svg_path: Path, png_path: Path, width: int, bg: str):
 
 def main():
     wet_bespoke, designed = load_existing_sublines()
-    (ROOT / "form-logo.svg").write_text(build_svg("hero", wet_bespoke, designed))
-    (ROOT / "form-logo-header.svg").write_text(build_svg("header", wet_bespoke, designed))
+    hero_svg = PUBLIC / "form-logo.svg"
+    header_svg = PUBLIC / "form-logo-header.svg"
+    hero_svg.write_text(build_svg("hero", wet_bespoke, designed))
+    header_svg.write_text(build_svg("header", wet_bespoke, designed))
 
     preview = ROOT / "tools" / "_preview"
     preview.mkdir(exist_ok=True)
-    raster(ROOT / "form-logo.svg", preview / "hero-570.png", 570, "#141618")
-    raster(ROOT / "form-logo.svg", preview / "hero-340.png", 340, "#141618")
-    raster(ROOT / "form-logo-header.svg", preview / "header-196.png", 196, "#0d0e0f")
-    raster(ROOT / "form-logo-header.svg", preview / "header-140.png", 140, "#0d0e0f")
+    raster(hero_svg, preview / "hero-570.png", 570, "#141618")
+    raster(hero_svg, preview / "hero-340.png", 340, "#141618")
+    raster(header_svg, preview / "header-196.png", 196, "#0d0e0f")
+    raster(header_svg, preview / "header-140.png", 140, "#0d0e0f")
     hero_im = Image.open(preview / "hero-570.png")
     w, h = hero_im.size
     drip = hero_im.crop((int(w * 0.12), int(h * 0.16), int(w * 0.40), int(h * 0.62)))
