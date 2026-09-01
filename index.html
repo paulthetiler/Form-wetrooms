@@ -96,8 +96,8 @@
       align-items: center;
       justify-content: center;
       height: 44px;
-      padding: 0 20px;
-      border: 1px solid rgba(183, 154, 98, .42);
+      padding: 0 22px;
+      border: 1px solid var(--gold);
       color: var(--gold2);
       letter-spacing: .18em;
       font-size: 10px;
@@ -107,10 +107,17 @@
       transition: background-color var(--ease), color var(--ease), border-color var(--ease);
     }
 
-    .top-cta:active {
+    .top-cta:hover,
+    .top-cta:focus-visible {
       background: var(--gold);
       color: #0e0f10;
       border-color: var(--gold);
+    }
+
+    .top-cta:active {
+      background: var(--gold2);
+      color: #0e0f10;
+      border-color: var(--gold2);
     }
 
     /* Hero */
@@ -194,6 +201,12 @@
       color: #0e0f10;
     }
 
+    .btn.primary:hover,
+    .btn.primary:focus-visible {
+      background: transparent;
+      color: var(--gold2);
+    }
+
     .btn.primary:active {
       background: transparent;
       color: var(--gold2);
@@ -232,7 +245,7 @@
 
     .intro-copy {
       color: var(--muted);
-      font-size: 17px;
+      font-size: 18px;
       line-height: 1.75;
       max-width: 36em;
     }
@@ -250,16 +263,17 @@
     .expertise-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 0 56px;
+      gap: 0 48px;
       margin-top: 72px;
-      border-bottom: 1px solid rgba(21, 21, 21, .12);
     }
 
     .card {
-      border-top: 1px solid rgba(21, 21, 21, .12);
-      padding: 36px 0 44px;
+      border-top: 1px solid rgba(21, 21, 21, .2);
+      padding: 36px 0 28px;
       transition: border-color var(--ease);
     }
+
+    .card:hover { border-top-color: var(--gold); }
 
     .card .num {
       font-size: 10px;
@@ -385,6 +399,8 @@
       color: #111;
     }
 
+    .cta .btn:hover,
+    .cta .btn:focus-visible,
     .cta .btn:active {
       background: #111;
       color: var(--paper);
@@ -416,27 +432,8 @@
       text-transform: uppercase;
     }
 
-    @media (hover: hover) {
-      .navlinks a:not(.top-cta):hover { color: var(--gold2); }
-
-      .top-cta:hover {
-        background: var(--gold);
-        color: #0e0f10;
-        border-color: var(--gold);
-      }
-
-      .btn.primary:hover {
-        background: transparent;
-        color: var(--gold2);
-      }
-
-      .cta .btn:hover {
-        background: #111;
-        color: var(--paper);
-      }
-
-      .card:hover { border-top-color: var(--gold); }
-    }
+    .navlinks a:not(.top-cta):hover,
+    .navlinks a:not(.top-cta):focus-visible { color: var(--gold2); }
 
     @media (max-width: 900px) {
       .wrap { width: min(var(--max), calc(100% - 40px)); }
