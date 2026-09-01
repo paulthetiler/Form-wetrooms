@@ -8,15 +8,16 @@
     <path d="M1235 145 V455 H1125"/>
   </g>
   <g fill="#f6f3ec">
-    <rect x="255" y="250" width="160" height="22"/>
-    <rect x="255" y="335" width="28" height="118"/>
-    <rect x="255" y="335" width="112" height="22"/>
+    <rect x="255" y="205" width="160" height="22"/>
+    <rect x="255" y="290" width="28" height="115"/>
+    <rect x="255" y="290" width="112" height="22"/>
   </g>
   <g fill="#f6f3ec" font-family="Arial, Helvetica, sans-serif" font-weight="300">
     <text x="450" y="405" font-size="240">O</text>
     <text x="705" y="405" font-size="240">R</text>
     <text x="960" y="405" font-size="240">M</text>
   </g>
-  <text x="700" y="500" text-anchor="middle" fill="#c6a76c" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="300" letter-spacing="26">WETROOMS</text>
+  <rect x="300" y="430" width="800" height="70" fill="#0d0e0f"/>
+  <text x="700" y="482" text-anchor="middle" fill="#c6a76c" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="300" letter-spacing="26">WETROOMS</text>
   <text x="700" y="610" text-anchor="middle" fill="#f6f3ec" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="500" letter-spacing="14">DESIGNED. ENGINEERED. TILED.</text>
 </svg>
