@@ -4,7 +4,9 @@ type FormLogoProps = {
 
 export function FormLogo({ variant }: FormLogoProps) {
   const isHero = variant === "hero";
-  const src = isHero ? "/form-logo.svg" : "/form-logo-header.svg";
+  const src = isHero
+    ? "/form-logo.svg?v=20260901-fdrip2"
+    : "/form-logo-header.svg?v=20260901-fdrip2";
   const alt = isHero
     ? "FORM Wetrooms — Designed. Engineered. Tiled."
     : "FORM Wetrooms";
