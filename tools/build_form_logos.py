@@ -31,44 +31,45 @@ O_PATH = (
     "M542 197.2A53.2 80.8 0 1 1 542 358.8A53.2 80.8 0 1 1 542 197.2Z"
 )
 
-# Pendant bead hanging from the inner/right underside of the F stem
-# (x 265.26–302.71, y 392). Slight overflow past the stem reads as surface tension.
+# Pendant drop hanging from the inner/right underside of the F stem
+# (x 265.26–302.71, y 392). Sized to stay readable at header width.
 DROP_BODY = (
-    "M287.4 391.8 "
-    "C285.6 395.6 284.8 400.0 285.4 404.2 "
-    "C286.2 410.0 290.8 414.4 296.8 414.6 "
-    "C302.8 414.8 307.6 410.6 307.4 404.8 "
-    "C307.2 400.2 305.2 395.8 302.6 391.9 "
-    "C298.8 391.6 291.2 391.5 287.4 391.8Z"
+    "M281.2 391.7 "
+    "C278.4 398.6 276.2 407.4 276.6 416.2 "
+    "C277.2 430.4 287.6 440.8 298.8 441.2 "
+    "C310.0 441.6 320.2 432.4 319.6 418.2 "
+    "C319.2 408.8 315.4 399.4 310.2 391.8 "
+    "C302.4 391.4 289.8 391.3 281.2 391.7Z"
 )
-# Wetting meniscus along the F's square foot — helps the cue hold at header size.
+# Wetting meniscus along the F's square foot.
 MENISCUS = (
-    "M273.6 392.0 "
-    "C276.8 396.4 282.4 398.0 289.4 398.1 "
-    "C296.0 398.2 300.8 396.6 303.4 392.0 "
-    "H273.6Z"
+    "M271.4 392.0 "
+    "C276.2 398.8 284.6 401.2 294.2 401.4 "
+    "C303.2 401.6 309.6 398.8 313.2 392.0 "
+    "H271.4Z"
 )
 
 
 def drip_hero() -> str:
     return f"""
   <g id="f-drip" aria-hidden="true">
-    <path fill="#4f646c" opacity=".55" d="{MENISCUS}"/>
+    <path fill="#6d8792" opacity=".7" d="{MENISCUS}"/>
     <path fill="url(#waterBody)" d="{DROP_BODY}"/>
-    <path fill="url(#waterShade)" opacity=".5" d="{DROP_BODY}"/>
-    <path fill="#c9d5da" opacity=".34" d="M288.2 394.6C286.8 398.4 286.0 402.6 286.6 406.2C287.2 409.2 289.4 411.0 291.2 410.2C292.8 409.4 293.2 406.0 292.8 402.4C292.4 398.6 291.2 395.4 289.6 393.8C289.0 394.0 288.5 394.2 288.2 394.6Z"/>
-    <ellipse cx="289.6" cy="400.6" rx="2.4" ry="3.5" fill="#f4f7f8" opacity=".78" transform="rotate(-24 289.6 400.6)"/>
-    <ellipse cx="301.6" cy="408.8" rx="1.15" ry="1.55" fill="#d5dfe3" opacity=".32" transform="rotate(16 301.6 408.8)"/>
+    <path fill="url(#waterShade)" opacity=".45" d="{DROP_BODY}"/>
+    <path fill="#d5e3e8" opacity=".42" d="M283.2 396.4C280.8 402.8 279.6 410.2 280.8 416.8C282.0 422.4 286.2 426.0 289.6 424.6C292.6 423.4 293.4 417.2 292.6 410.6C291.8 404.2 289.2 398.2 286.2 394.8C284.8 395.0 283.8 395.6 283.2 396.4Z"/>
+    <ellipse cx="286.4" cy="407.2" rx="4.2" ry="6.4" fill="#f7fafb" opacity=".82" transform="rotate(-22 286.4 407.2)"/>
+    <ellipse cx="308.6" cy="423.4" rx="2.0" ry="2.8" fill="#e4eef1" opacity=".4" transform="rotate(14 308.6 423.4)"/>
   </g>"""
 
 
 def drip_header() -> str:
-    # Same silhouette, bolder fill + one highlight so it holds at ~140–200px.
+    # Same silhouette, flatter fills so the bead holds at ~140–200px.
     return f"""
   <g id="f-drip" aria-hidden="true">
-    <path fill="#5a727b" d="{MENISCUS}"/>
-    <path fill="#5e7680" d="{DROP_BODY}"/>
-    <ellipse cx="289.8" cy="401.2" rx="2.8" ry="4.0" fill="#dce4e7" opacity=".76" transform="rotate(-22 289.8 401.2)"/>
+    <path fill="#7b96a1" d="{MENISCUS}"/>
+    <path fill="#7d9aa6" d="{DROP_BODY}"/>
+    <path fill="#c5d6dc" opacity=".55" d="M283.4 396.8C281.2 403.0 280.2 410.0 281.4 416.2C282.6 421.2 286.4 424.2 289.4 422.8C292.0 421.6 292.6 416.0 291.8 410.0C291.0 404.0 288.4 398.4 285.8 395.4C284.6 395.6 283.8 396.2 283.4 396.8Z"/>
+    <ellipse cx="286.8" cy="407.6" rx="4.6" ry="6.8" fill="#f4f8f9" opacity=".88" transform="rotate(-20 286.8 407.6)"/>
   </g>"""
 
 
@@ -77,14 +78,14 @@ DEFS_HERO = """
     <filter id="halo" x="-25%" y="-35%" width="150%" height="180%">
       <feDropShadow dx="0" dy="1" stdDeviation="5" flood-color="#050607" flood-opacity=".88"/>
     </filter>
-    <linearGradient id="waterBody" x1="294" y1="392" x2="299" y2="415" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#7c9098"/>
-      <stop offset=".55" stop-color="#5a717a"/>
-      <stop offset="1" stop-color="#3d5159"/>
+    <linearGradient id="waterBody" x1="298" y1="392" x2="304" y2="441" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b7cdd6"/>
+      <stop offset=".42" stop-color="#7d9aa6"/>
+      <stop offset="1" stop-color="#4a6672"/>
     </linearGradient>
-    <linearGradient id="waterShade" x1="306" y1="398" x2="286" y2="414" gradientUnits="userSpaceOnUse">
+    <linearGradient id="waterShade" x1="318" y1="404" x2="280" y2="436" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#1c272c" stop-opacity="0"/>
-      <stop offset="1" stop-color="#1c272c" stop-opacity=".36"/>
+      <stop offset="1" stop-color="#1c272c" stop-opacity=".32"/>
     </linearGradient>
     <linearGradient id="textBack" x1="700" y1="470" x2="700" y2="710" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#0b0c0d" stop-opacity="0"/>
@@ -119,8 +120,8 @@ DEFS_HEADER = """
 FRAME = """
   <g fill="none" stroke="#e4cc90" stroke-width="7.5" stroke-linecap="square">
     <path d="M178 98 H1222"/>
-    <path d="M178 98 V456 H308"/>
-    <path d="M1222 98 V456 H1092"/>
+    <path d="M178 98 V468 H308"/>
+    <path d="M1222 98 V468 H1092"/>
   </g>"""
 
 
@@ -155,8 +156,8 @@ def build_svg(kind: str, wet_bespoke: str, designed: str) -> str:
         backing = (
             '  <rect x="210" y="472" width="980" height="230" fill="url(#textGlow)"/>'
         )
-        extra = f'  <g transform="translate(0 78)">\n    {designed}\n  </g>\n'
-        wet_t = 64
+        extra = f'  <g transform="translate(0 84)">\n    {designed}\n  </g>\n'
+        wet_t = 70
     else:
         view = 'viewBox="48 78 1304 520"'
         title_desc = (
@@ -170,7 +171,7 @@ def build_svg(kind: str, wet_bespoke: str, designed: str) -> str:
             '  <rect x="210" y="472" width="980" height="160" fill="url(#textGlow)"/>'
         )
         extra = ""
-        wet_t = 64
+        wet_t = 70
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" {view} role="img" aria-labelledby="title desc">
   {title_desc}
