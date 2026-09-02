@@ -1,26 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 20 1400 700" role="img" aria-labelledby="title desc">
   <title id="title">FORM Wetrooms</title>
-  <desc id="desc">FORM wordmark in a gold architectural frame, with a small glass water drip hanging from the F, plus Wetrooms &amp; Bespoke Tiling and Designed. Engineered. Tiled.</desc>
+  <desc id="desc">FORM wordmark in a gold architectural frame, with a thin waterline through the O, plus Wetrooms &amp; Bespoke Tiling and Designed. Engineered. Tiled.</desc>
 
   <defs>
     <filter id="halo" x="-25%" y="-35%" width="150%" height="180%">
       <feDropShadow dx="0" dy="1" stdDeviation="5" flood-color="#050607" flood-opacity=".88"/>
     </filter>
-    <linearGradient id="waterBody" x1="298" y1="392" x2="304" y2="441" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#b7cdd6"/>
-      <stop offset=".42" stop-color="#7d9aa6"/>
-      <stop offset="1" stop-color="#4a6672"/>
+    <linearGradient id="waterline" x1="451" y1="318" x2="633" y2="318" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d7e4e8"/>
+      <stop offset=".45" stop-color="#9bb4bc"/>
+      <stop offset="1" stop-color="#6d8790"/>
     </linearGradient>
-    <linearGradient id="waterShade" x1="318" y1="404" x2="280" y2="436" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#1c272c" stop-opacity="0"/>
-      <stop offset="1" stop-color="#1c272c" stop-opacity=".32"/>
-    </linearGradient>
-    <linearGradient id="textBack" x1="700" y1="470" x2="700" y2="710" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#0b0c0d" stop-opacity="0"/>
-      <stop offset=".18" stop-color="#0b0c0d" stop-opacity=".88"/>
-      <stop offset="1" stop-color="#0b0c0d" stop-opacity=".38"/>
-    </linearGradient>
-    <radialGradient id="textGlow" cx="700" cy="590" r="440" gradientUnits="userSpaceOnUse">
+    <clipPath id="oRing" clipPathUnits="userSpaceOnUse">
+      <path fill-rule="evenodd" d="M542 159.5A91 118.5 0 1 1 542 396.5A91 118.5 0 1 1 542 159.5ZM542 197.2A53.2 80.8 0 1 1 542 358.8A53.2 80.8 0 1 1 542 197.2Z"/>
+    </clipPath>
+    <radialGradient id="textGlow" cx="700" cy="560" r="440" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#0b0c0d" stop-opacity=".82"/>
       <stop offset=".68" stop-color="#0b0c0d" stop-opacity=".4"/>
       <stop offset="1" stop-color="#0b0c0d" stop-opacity="0"/>
@@ -30,8 +24,8 @@
 
   <g fill="none" stroke="#e4cc90" stroke-width="7.5" stroke-linecap="square">
     <path d="M178 98 H1222"/>
-    <path d="M178 98 V468 H308"/>
-    <path d="M1222 98 V468 H1092"/>
+    <path d="M178 98 V428 H308"/>
+    <path d="M1222 98 V428 H1092"/>
   </g>
   <g filter="url(#halo)">
     <path fill="#f6f3ec" d="M265.26 392.00V164.00H302.71V392.00ZM290.99 294.29V260.09H406.94V294.29ZM290.99 198.20V164.00H412.48V198.20Z"/>
@@ -40,16 +34,12 @@
     <path fill="#f6f3ec" d="M898.00 392.00V164.00H924.06L1018.84 320.02H1001.90L1096.69 164.00H1122.74V392.00H1085.29V229.79L1093.75 232.07L1023.40 347.70H997.34L926.99 232.07L935.46 229.79V392.00Z"/>
   </g>
 
-  <g id="f-drip" aria-hidden="true">
-    <path fill="#6d8792" opacity=".7" d="M271.4 392.0 C276.2 398.8 284.6 401.2 294.2 401.4 C303.2 401.6 309.6 398.8 313.2 392.0 H271.4Z"/>
-    <path fill="url(#waterBody)" d="M281.2 391.7 C278.4 398.6 276.2 407.4 276.6 416.2 C277.2 430.4 287.6 440.8 298.8 441.2 C310.0 441.6 320.2 432.4 319.6 418.2 C319.2 408.8 315.4 399.4 310.2 391.8 C302.4 391.4 289.8 391.3 281.2 391.7Z"/>
-    <path fill="url(#waterShade)" opacity=".45" d="M281.2 391.7 C278.4 398.6 276.2 407.4 276.6 416.2 C277.2 430.4 287.6 440.8 298.8 441.2 C310.0 441.6 320.2 432.4 319.6 418.2 C319.2 408.8 315.4 399.4 310.2 391.8 C302.4 391.4 289.8 391.3 281.2 391.7Z"/>
-    <path fill="#d5e3e8" opacity=".42" d="M283.2 396.4C280.8 402.8 279.6 410.2 280.8 416.8C282.0 422.4 286.2 426.0 289.6 424.6C292.6 423.4 293.4 417.2 292.6 410.6C291.8 404.2 289.2 398.2 286.2 394.8C284.8 395.0 283.8 395.6 283.2 396.4Z"/>
-    <ellipse cx="286.4" cy="407.2" rx="4.2" ry="6.4" fill="#f7fafb" opacity=".82" transform="rotate(-22 286.4 407.2)"/>
-    <ellipse cx="308.6" cy="423.4" rx="2.0" ry="2.8" fill="#e4eef1" opacity=".4" transform="rotate(14 308.6 423.4)"/>
+  <g id="waterline" aria-hidden="true">
+    <rect clip-path="url(#oRing)" x="448" y="308.5" width="188" height="11.0" fill="url(#waterline)"/>
+    <rect x="490.5" y="312.9" width="103" height="2.2" fill="#c5d4d9" opacity=".42"/>
   </g>
-  <rect x="210" y="472" width="980" height="230" fill="url(#textGlow)"/>
-  <g transform="translate(0 70)">
+  <rect x="210" y="448" width="980" height="250" fill="url(#textGlow)"/>
+  <g transform="translate(0 52)">
     <path fill="#e4cc90" d="M470.09 468.00 454.97 422.00H462.40L473.77 457.42H471.80L482.90 422.00H488.16L499.26 457.42H497.29L508.66 422.00H516.09L500.97 468.00H495.72L484.54 432.65H486.52L475.34 468.00Z"/>
     <path fill="#e4cc90" d="M538.79 468.00V422.00H546.35V468.00ZM543.98 468.00V461.10H569.74V468.00ZM543.98 447.83V441.19H567.51V447.83ZM543.98 428.90V422.00H569.41V428.90Z"/>
     <path fill="#e4cc90" d="M605.13 468.00V423.31H612.68V468.00ZM590.14 428.90V422.00H627.67V428.90Z"/>
