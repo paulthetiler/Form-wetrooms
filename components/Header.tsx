@@ -12,7 +12,7 @@ export function Header() {
           <a href="#approach">Approach</a>
           <a href="#expertise">Expertise</a>
           <a href="#work">Work</a>
-          <a className="top-cta" href="#contact">
+          <a className="top-cta" href="#estimate">
             Estimate your project
           </a>
         </nav>
