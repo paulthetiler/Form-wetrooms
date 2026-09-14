@@ -5,7 +5,7 @@ export function Header() {
   return (
     <header>
       <div className="wrap nav">
-        <Link className="brandmark" href="/" aria-label="FORM Wetrooms home">
+        <Link className="brandmark" href="/" aria-label="FORM home">
           <FormLogo variant="header" />
         </Link>
         <nav className="navlinks">
@@ -13,7 +13,7 @@ export function Header() {
           <a href="#expertise">Expertise</a>
           <a href="#work">Work</a>
           <a className="top-cta" href="#contact">
-            Estimate your wetroom
+            Estimate your project
           </a>
         </nav>
       </div>
