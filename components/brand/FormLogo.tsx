@@ -4,17 +4,24 @@ type FormLogoProps = {
 
 export function FormLogo({ variant }: FormLogoProps) {
   const isHero = variant === "hero";
-  const src = isHero
-    ? "/form-logo.svg?v=20260901-waterline"
-    : "/form-logo-header.svg?v=20260901-waterline";
-  const alt = isHero
-    ? "FORM Wetrooms — Designed. Engineered. Tiled."
-    : "FORM Wetrooms";
 
   return (
-    <div className="form-logo">
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={src} alt={alt} />
+    <div
+      className={`form-logo form-logo--${variant}`}
+      role="img"
+      aria-label="FORM — Bathrooms, Wetrooms and Bespoke Tiling"
+    >
+      <div className="form-logo__frame" aria-hidden="true">
+        <span className="form-logo__word">FORM</span>
+      </div>
+      <div className="form-logo__services" aria-hidden="true">
+        Bathrooms <span>·</span> Wetrooms <span>·</span> Bespoke Tiling
+      </div>
+      {isHero ? (
+        <div className="form-logo__strap" aria-hidden="true">
+          Designed. Engineered. Tiled.
+        </div>
+      ) : null}
     </div>
   );
 }
