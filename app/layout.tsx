@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./brand.css";
 
 export const metadata: Metadata = {
-  title:
-    "FORM Wetrooms | Specialist Wetroom Construction & Porcelain Installation",
+  title: "FORM | Bathrooms, Wetrooms & Bespoke Tiling in Cheshire",
   description:
-    "FORM Wetrooms — specialist wetroom construction, waterproofing and precision porcelain installation across Warrington, Lymm, Knutsford, Hale and Cheshire.",
+    "FORM creates bespoke bathrooms, engineered wetrooms and precision porcelain installations across Warrington, Lymm, Knutsford, Hale and Cheshire.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
