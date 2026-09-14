@@ -11,12 +11,12 @@ export default function Home() {
         <section className="hero">
           <div className="hero-media" />
           <div className="wrap hero-content">
-            <div className="kicker">Specialist wetrooms · Cheshire</div>
+            <div className="kicker">Bathrooms · Wetrooms · Bespoke Tiling · Cheshire</div>
             <div className="hero-logo">
               <FormLogo variant="hero" />
             </div>
             <p className="hero-copy">
-              Specialist wetroom construction and precision porcelain
+              Bespoke bathrooms, engineered wetrooms and precision porcelain
               installation for clients who care as much about what sits beneath
               the tile as the finish above it.
             </p>
@@ -26,7 +26,7 @@ export default function Home() {
           </div>
           <div className="hero-credit">
             Porcelain installation completed by a FORM installation specialist
-            prior to FORM Wetrooms.
+            prior to the FORM brand.
           </div>
         </section>
         <section id="approach">
@@ -41,11 +41,12 @@ export default function Home() {
             </div>
             <div className="intro-copy">
               <p>
-                A wetroom is only as good as the structure, drainage and
-                waterproofing beneath it. FORM brings together{" "}
+                A bathroom or wetroom is only as good as the structure,
+                drainage, preparation and waterproofing beneath it. FORM brings
+                together{" "}
                 <strong>
-                  proven wetroom systems, considered preparation and high-end
-                  porcelain installation
+                  proven systems, considered preparation and high-end porcelain
+                  installation
                 </strong>{" "}
                 to create rooms that are technically sound and visually exact.
               </p>
@@ -63,10 +64,11 @@ export default function Home() {
             <div className="expertise-grid">
               <article className="card">
                 <div className="num">01</div>
-                <h3>Wetroom engineering</h3>
+                <h3>Bathrooms &amp; wetrooms</h3>
                 <p>
-                  Substrates, floor formers, drainage, falls and waterproofing
-                  treated as one complete system — not separate jobs.
+                  Complete bathroom and wetroom construction with substrates,
+                  floor formers, drainage, falls and waterproofing treated as
+                  one complete system — not separate jobs.
                 </p>
               </article>
               <article className="card">
@@ -93,14 +95,14 @@ export default function Home() {
             <div className="section-label">The FORM standard</div>
             <div>
               <div className="quote">
-                Wetrooms built properly.
+                Bathrooms built properly.
                 <br />
                 <em>Finished properly.</em>
               </div>
               <p>
-                A good wetroom isn&apos;t just about how it looks. The
-                preparation, falls, drainage and waterproofing all have to be
-                right before the first tile goes down. We take care of the
+                A good bathroom or wetroom isn&apos;t just about how it looks.
+                The preparation, structure, drainage and waterproofing all have
+                to be right before the first tile goes down. We take care of the
                 technical work underneath, then finish the room to the same
                 standard.
               </p>
@@ -169,7 +171,7 @@ export default function Home() {
                 <strong>Architectural porcelain installation</strong>
                 <span>
                   Example of high-end work completed by a FORM installation
-                  specialist prior to the FORM Wetrooms brand.
+                  specialist prior to the FORM brand.
                 </span>
               </div>
             </div>
@@ -179,7 +181,7 @@ export default function Home() {
           <div className="wrap cta-grid">
             <div>
               <div className="section-label">Start a project</div>
-              <h2>Planning a wetroom?</h2>
+              <h2>Planning a bathroom or wetroom?</h2>
             </div>
             <div>
               <p>
@@ -192,7 +194,7 @@ export default function Home() {
                 className="btn"
                 href="https://www.paulthetiler.co.uk/project-estimate/"
               >
-                Use the wetroom estimator
+                Estimate your project
               </a>
               <div className="cta-note">
                 A quick first step — not a generic square-metre calculator.
