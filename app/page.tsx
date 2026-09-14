@@ -20,8 +20,8 @@ export default function Home() {
               installation for clients who care as much about what sits beneath
               the tile as the finish above it.
             </p>
-            <a href="#contact" className="btn primary">
-              Discuss your project
+            <a href="#estimate" className="btn primary">
+              Start your estimate
             </a>
           </div>
           <div className="hero-credit">
@@ -29,6 +29,103 @@ export default function Home() {
             prior to the FORM brand.
           </div>
         </section>
+
+        <section className="dream-estimator" id="estimate">
+          <div className="dream-estimator-media" aria-hidden="true" />
+          <div className="wrap dream-estimator-grid">
+            <div className="dream-estimator-copy">
+              <div className="section-label">Your bathroom, your way</div>
+              <h2>Your dream bathroom starts here.</h2>
+              <p>
+                Start with the room you have in mind. We&apos;ll take you through
+                the look, the finish and the practical details without making
+                you speak fluent builder.
+              </p>
+              <div className="dream-points">
+                <span>Tailored to your space</span>
+                <span>Realistic guide pricing</span>
+                <span>Designed around your vision</span>
+              </div>
+            </div>
+
+            <form
+              className="estimate-panel"
+              action="https://www.paulthetiler.co.uk/project-estimate/"
+              method="get"
+            >
+              <input type="hidden" name="source" value="form" />
+              <div className="estimate-panel-head">
+                <span>FORM project estimator</span>
+                <h3>What are you planning?</h3>
+                <p>Choose the closest match. You can refine everything next.</p>
+              </div>
+
+              <div className="estimate-choices">
+                <label className="estimate-choice">
+                  <input type="radio" name="project" value="bathroom" defaultChecked />
+                  <span className="estimate-choice-body">
+                    <svg viewBox="0 0 48 48" aria-hidden="true">
+                      <path d="M8 27h32v3a8 8 0 0 1-8 8H16a8 8 0 0 1-8-8v-3Z" />
+                      <path d="M13 27V15a5 5 0 0 1 10 0" />
+                      <path d="M16 38v4M32 38v4" />
+                    </svg>
+                    <strong>Bathroom</strong>
+                    <small>Full room transformation</small>
+                  </span>
+                </label>
+
+                <label className="estimate-choice">
+                  <input type="radio" name="project" value="ensuite" />
+                  <span className="estimate-choice-body">
+                    <svg viewBox="0 0 48 48" aria-hidden="true">
+                      <path d="M11 40V14h26v26" />
+                      <path d="M16 40V23h16v17" />
+                      <circle cx="24" cy="19" r="2" />
+                    </svg>
+                    <strong>Ensuite</strong>
+                    <small>Compact, beautifully considered</small>
+                  </span>
+                </label>
+
+                <label className="estimate-choice">
+                  <input type="radio" name="project" value="wetroom" />
+                  <span className="estimate-choice-body">
+                    <svg viewBox="0 0 48 48" aria-hidden="true">
+                      <path d="M12 13h17a7 7 0 0 1 7 7" />
+                      <path d="M36 20v4" />
+                      <path d="M30 27v3M36 27v3M42 27v3M33 34v3M39 34v3" />
+                      <path d="M8 42h34" />
+                    </svg>
+                    <strong>Wetroom</strong>
+                    <small>Engineered from the ground up</small>
+                  </span>
+                </label>
+
+                <label className="estimate-choice">
+                  <input type="radio" name="project" value="tiling" />
+                  <span className="estimate-choice-body">
+                    <svg viewBox="0 0 48 48" aria-hidden="true">
+                      <rect x="8" y="8" width="14" height="14" />
+                      <rect x="26" y="8" width="14" height="14" />
+                      <rect x="8" y="26" width="14" height="14" />
+                      <rect x="26" y="26" width="14" height="14" />
+                    </svg>
+                    <strong>Bespoke tiling</strong>
+                    <small>Porcelain and feature finishes</small>
+                  </span>
+                </label>
+              </div>
+
+              <button className="estimate-next" type="submit">
+                Start my estimate <span aria-hidden="true">→</span>
+              </button>
+              <div className="estimate-note">
+                No obligation · around 2 minutes · instant guide price
+              </div>
+            </form>
+          </div>
+        </section>
+
         <section id="approach">
           <div className="wrap intro">
             <div>
@@ -53,6 +150,43 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <section className="inspiration" aria-label="Bathroom inspiration">
+          <div className="wrap inspiration-head">
+            <div>
+              <div className="section-label">Find your look</div>
+              <h2>Start with a feeling.</h2>
+            </div>
+            <p>
+              You do not need a finished specification. A saved image, a tile
+              you love or a rough idea is enough to start the conversation.
+            </p>
+          </div>
+          <div className="wrap inspiration-grid">
+            <article className="inspiration-shot inspiration-shot-one">
+              <div className="inspiration-caption">
+                <span>01</span>
+                <strong>Warm &amp; calm</strong>
+              </div>
+            </article>
+            <article className="inspiration-shot inspiration-shot-two">
+              <div className="inspiration-caption">
+                <span>02</span>
+                <strong>Clean &amp; minimal</strong>
+              </div>
+            </article>
+            <article className="inspiration-shot inspiration-shot-three">
+              <div className="inspiration-caption">
+                <span>03</span>
+                <strong>Hotel detail</strong>
+              </div>
+            </article>
+          </div>
+          <div className="wrap inspiration-disclaimer">
+            Inspiration imagery shown for style reference; not FORM installations.
+          </div>
+        </section>
+
         <section className="expertise" id="expertise">
           <div className="wrap">
             <div className="section-label">What we specialise in</div>
@@ -190,11 +324,8 @@ export default function Home() {
                 you a realistic indication of the likely investment before
                 deciding whether a site visit is needed.
               </p>
-              <a
-                className="btn"
-                href="https://www.paulthetiler.co.uk/project-estimate/"
-              >
-                Estimate your project
+              <a className="btn" href="#estimate">
+                Start your estimate
               </a>
               <div className="cta-note">
                 A quick first step — not a generic square-metre calculator.
