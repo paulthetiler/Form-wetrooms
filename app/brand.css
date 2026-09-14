@@ -1,0 +1,111 @@
+.form-logo {
+  width: 100%;
+  color: #f6f3ec;
+  text-transform: uppercase;
+  line-height: 1;
+  text-shadow: 0 3px 14px rgba(0, 0, 0, .42);
+}
+
+.form-logo__frame {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--gold2);
+  background: rgba(8, 9, 10, .08);
+}
+
+.form-logo__word {
+  display: block;
+  font-weight: 300;
+  letter-spacing: .17em;
+  margin-right: -.17em;
+  white-space: nowrap;
+}
+
+.form-logo__services,
+.form-logo__strap {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.form-logo__services {
+  color: var(--gold2);
+  font-weight: 600;
+  letter-spacing: .18em;
+}
+
+.form-logo__services span {
+  display: inline-block;
+  margin: 0 .3em;
+  color: #f3ead4;
+}
+
+.form-logo__strap {
+  color: #f6f3ec;
+  letter-spacing: .28em;
+}
+
+.form-logo--hero .form-logo__frame {
+  padding: 12px 20px 9px;
+  border-width: 2px;
+}
+
+.form-logo--hero .form-logo__word {
+  font-size: clamp(58px, 7.5vw, 96px);
+}
+
+.form-logo--hero .form-logo__services {
+  margin-top: 15px;
+  font-size: clamp(9px, 1.1vw, 13px);
+}
+
+.form-logo--hero .form-logo__strap {
+  margin-top: 13px;
+  font-size: clamp(8px, .82vw, 10px);
+}
+
+.form-logo--header .form-logo__frame {
+  padding: 5px 8px 4px;
+}
+
+.form-logo--header .form-logo__word {
+  font-size: clamp(23px, 2.4vw, 34px);
+}
+
+.form-logo--header .form-logo__services {
+  margin-top: 7px;
+  font-size: 6.5px;
+  letter-spacing: .13em;
+}
+
+@media (max-width: 600px) {
+  .form-logo--hero .form-logo__frame {
+    padding: 9px 14px 7px;
+  }
+
+  .form-logo--hero .form-logo__word {
+    font-size: clamp(50px, 16vw, 66px);
+  }
+
+  .form-logo--hero .form-logo__services {
+    margin-top: 11px;
+    font-size: 8px;
+    letter-spacing: .12em;
+  }
+
+  .form-logo--hero .form-logo__services span {
+    margin: 0 .18em;
+  }
+
+  .form-logo--hero .form-logo__strap {
+    margin-top: 10px;
+    font-size: 7.5px;
+    letter-spacing: .2em;
+  }
+
+  .form-logo--header .form-logo__services {
+    font-size: 5.4px;
+    letter-spacing: .08em;
+  }
+}
