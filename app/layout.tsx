@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./brand.css";
+import "./estimator-preview.css";
 
 export const metadata: Metadata = {
   title: "FORM | Bathrooms, Wetrooms & Bespoke Tiling in Cheshire",
